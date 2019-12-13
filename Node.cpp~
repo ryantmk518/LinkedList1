@@ -1,0 +1,36 @@
+#include <iostream>
+#include <cstring>
+#include <String.h>
+#include "Node.h"
+
+//Student class
+
+using namespace std;
+
+Node::Node(Student* student) {
+  value = 0;
+  next = NULL;
+}
+
+Node::~Node() {
+  delete &value;
+  next = NULL;
+}
+
+void Node::setValue(int newvalue) {
+  value = newvalue;
+}
+
+int Node::getValue() {
+  return value;
+}
+
+Node* Node::getNext() {
+  return next;
+}
+
+void Node::setNext(Node* newnext){
+  next = newnext;
+}
+
+
