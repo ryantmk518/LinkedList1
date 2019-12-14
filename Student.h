@@ -1,3 +1,5 @@
+#ifndef STUDENT_H
+#define STUDENT_H
 #include <iostream>
 #include <cstring>
 
@@ -5,12 +7,16 @@ using namespace std;
 
 class Student{
 public:
-  Student();
-
+  Student(char* sfname, char* slname, int ID, float GPA);
+  ~Student();
+  char* getfname();
+  char* getlname();
+  int getID();
+  float getGPA();
 private:
   int ID;
-  double GPA;
-  char fname[];
-  char lname[];
-  
+  float gpa;
+  char fname[99];
+  char lname[99];
 };
+#endif

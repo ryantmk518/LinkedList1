@@ -1,3 +1,5 @@
+#ifndef NODE_H
+#define NODE_H
 #include <iostream>
 #include <cstring>
 #include <String.h>
@@ -12,10 +14,11 @@ public:
   Node(Student*);
   ~Node();
   void setStudent(Student* newstudent);
-  int getStudent();
+  Student* getStudent();
   void setNext(Node* newnext);
   Node* getNext();
 private:
   Student* student;
   Node* next;
 };
+#endif

@@ -2,8 +2,7 @@
 #include <cstring>
 #include <String.h>
 #include "Node.h"
-
-//Student class
+#include "Student.h"
 
 using namespace std;
 
@@ -21,7 +20,7 @@ void Node::setStudent(Student* newstudent) {
   student = newstudent;
 }
 
-int Node::getStudent() {
+Student* Node::getStudent() {
   return student;
 }
 
