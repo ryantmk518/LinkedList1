@@ -11,7 +11,7 @@ using namespace std;
 
 class Node{
 public:
-  Node(Student*);
+  Node(Student*); //Initialize funcitons and variables
   ~Node();
   void setStudent(Student* newstudent);
   Student* getStudent();

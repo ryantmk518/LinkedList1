@@ -3,11 +3,13 @@
 #include <iostream>
 #include <cstring>
 
+//Student header
+
 using namespace std;
 
 class Student{
 public:
-  Student(char* sfname, char* slname, int ID, float GPA);
+  Student(char* sfname, char* slname, int ID, float GPA); //Initialize functions and variables
   ~Student();
   char* getfname();
   char* getlname();
